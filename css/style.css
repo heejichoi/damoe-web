@@ -83,6 +83,124 @@ body{
     right: 0;
     bottom:-76px;
 }
+
+.subpage > h2, .subpage > h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.subpage > h2{
+    margin-top: 100px;
+    font-size: 2rem;
+}
+.subpage > h3{
+    font-size: 1rem;
+    color: #666;
+}
+
+.subpage article-wrap article:nth-child(1){
+    width: 100px;
+    overflow: hidden;
+}
+
+.user-form{
+    background: #E92F2F;
+    color: white;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.user-form li{
+    margin-bottom: 20px;
+}
+.user-form label{
+    margin-right: 20px;
+    display: inline-block;
+    width: 100px;
+}
+.user-form input{
+    padding: 15px 0;
+    text-indent: 20px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    outline: none; /*아웃라인 : 없음 */
+}
+.user-form input:focus { /*요소 클릭시 표시해주는 */
+    background: gold;
+}
+#user-Name, #user-Email, #user-Sns{
+width: calc(100% - 150px);
+}
+#userAddress1 {
+    width: calc( 100% - 233px);
+    margin-bottom: 20px;
+
+}
+#searchAddress{
+    padding: 14px 0;
+    vertical-align: top;/* 수직-정렬 : 왼쪽기준, 1) table 2)inline 요소 */
+    width: 100px;
+    text-indent: 0;
+    color: white;
+    border: 0;
+}
+
+#userAddress2 {
+margin-left: 124px;
+width: calc(100% - 233px);
+}
+.agreement-form > h3{
+    margin-top: 50px;
+}
+.agreement{
+    border: 1px solid #a3a3a3;
+    height: 100px;
+    padding: 50;
+    background: #f1f1f1;
+    overflow: hidden scroll;
+}
+.agreement-check{
+    margin: 20px 0 50px; /*위20 좌우0 아래50 */
+}
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+input[type=checkbox] + label {
+    font-size: 1rem;
+}
+input[type=checkbox]:checked{
+    color: #E92F2F;
+
+}
+.btns{
+    text-align: center;
+}
+.btns input[type=submit]{
+    background: #E92F2F;
+    color: rgba(255, 255, 255, 1);
+    width: 250px;
+    height: 70px;
+    font-size: 1.250rem;
+    border: 0;
+    margin-right:10px;
+
+
+}
+.btns input[type=reset] {
+    background: #ffff;
+    color: #666;
+    width: 250px;
+    height: 70px;
+    font-size: 1.250rem;
+    border: 1px solid #666;
+    
+}
+.btns input[type=submit]:hover {
+    background: #5C1010;
+    color: white;
+}
 .article-wrap{
     max-width: 1000px;
     margin: 100px auto;
@@ -91,10 +209,10 @@ body{
 .article-wrap article{
     float: left;
 }
-.article-wrap article:nth-child(1){
+/*.article-wrap article:nth-child(1){
     width: 681px;
     overflow: hidden;
-}
+}*/
 .article-wrap article h2{
     text-transform: capitalize;
     margin: 0 0 10px 0;
@@ -186,6 +304,9 @@ display: block;
 }
 .etc li{
     display: inline-block;
+}
+address{
+    font-style: normal;
 }
 address p {
     display: inline-block;

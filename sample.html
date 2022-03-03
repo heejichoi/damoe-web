@@ -14,7 +14,7 @@
     <title>다모애</title>
 </head>
 <body>
-        <h1>form 태그 연습(p.134)</h1>
+        <!--<h1>form 태그 연습(p.134)</h1>--->
         <h1 class="d-none">다모애 테라피 샴푸</h1>
     <header>
         <h2 class="d-none">헤더</h2>
@@ -50,40 +50,47 @@
             </div>
         </div>
     </div>
-    <section id="main">
-        <h2>다모애 샘플 신청서</h2>
+    <section id="main" class="subpage">
+        <h2>sample</h2>
         <h3>무료 샘플신청</h3>
         <div class="article-wrap">
             <article>
-                <h2>■신청서</h2>
+                <h2 class="d-none"> ■신청서 - 사용자 입력부분</h2>
                 <form name="sample-form">
                     <div class="form-wrap">
+                        <h3>■신청서</h3>
                         <div class="user-form">
                             <ul>
                                 <li>
-                                    <label for="username">이름</label>
-                                    <input type="text" id="username" name="username" placeholder="ex> name">
+                                    <label for="user-Name">이름</label>
+                                    <input type="text" id="user-Name" name="user-Name" maxlength="20" placeholder="ex> name">
                                 </li>
                                 <li>
-                                    <label for="userEmail">이메일</label>
-                                    <input type="email" id="userEmail" name="userEmail" placeholder="ex> address@domain.com">
+                                    <label for="user-Email">이메일</label>
+                                    <input type="email" id="user-Email" name="user-Email" placeholder="ex> address@domain.com">
                                 </li>
                                 <li>
-                                    <label for="userSns">SNS주소</label>
-                                    <input type="url" id="userSns" name="userSns" placeholder="ex>https://insta.com/your-id">
+                                    <label for="user-Sns">SNS주소</label>
+                                    <input type="url" id="user-Sns" name="user-Sns" placeholder="ex>https://insta.com/your-id">
                                 </li>
                                 <li>
                                     <label for="userAddress">주소</label>
-                                    <input type="text" id="userAddress1" name="userAddress1">
-                                    <input type="button" onclick="address_find()" value="검색">
-                                    <input type="text" id="userAddress2" name="userAddress2">
+                                    <input type="text" id="userAddress1" name="userAddress1"  placeholder="1. rind, select ans so don type here"> 
+                                    <input type="button" id="searchAddress" onclick="address_find()" value="검색">
+                                    <input type="text" id="userAddress2" name="userAddress2" placeholder="2. find, select and so don type here">
                                 </li>
                             </ul>
                         </div>
                         <div class="agreement-form">
-                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sunt recusandae suscipit quis libero. Accusamus autem voluptatem, magni praesentium hic, minus quos, deleniti nulla neque iste debitis ad odio earum.
-                               <label for="userAgreement">동의합니다.</label>
-                               <input type="checkbox" id="userAgreement" name="userAgreement">
+                            <h3>■개인정보 수집&middot;이용동의</h3>
+                            <div class="agreement"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sunt recusandae suscipit quis libero. Accusamus autem voluptatem, magni praesentium hic, minus quos, deleniti nulla neque iste debitis ad odio earum.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sunt recusandae suscipit quis libero. Accusamus autem voluptatem, magni praesentium hic, minus quos, deleniti nulla neque iste debitis ad odio earum.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sunt recusandae suscipit quis libero. Accusamus autem voluptatem, magni praesentium hic, minus quos, deleniti nulla neque iste debitis ad odio earum.
+                            </div>
+                            <div class="agreement-check"><input type="checkbox" id="userAgreement" name="userAgreement">
+                                <label for="userAgreement">동의합니다.</label>
+                            </div>
+                            
                         </div>
                         <div class="btns">
                             <input type="submit" value="신청">
