@@ -34,6 +34,11 @@ body{
     ul{
         list-style-type: none ;
     }
+    .side-banner{
+        position: fixed;
+        right: 5%;
+        top:10%;
+    }
 .header-wrap{
         width: 1000px;
         height: 300px;
