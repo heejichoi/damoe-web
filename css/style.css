@@ -31,8 +31,56 @@ body{
     font-family: 'Maven Pro','Noto Sans KR', sans-serif;
     background:url("../images/background");
     }
-    ul{
+
+    #modal.show {
+        display: block; /* 스크립트로 show, hide를 제어하기 위한 스타일 */
+    }
+    #modal {
+        position: fixed;
+        z-index: 2000; /* 쌓이는 순서, 값이 클수록 화면의 앞에 위치 */
+        background: rgba(0,0,0,.3); /* red, green, blue, alpa(0~3)*/
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
         
+    }
+    .modal-wrap {
+        position: absolute;
+        background: white;
+        width: 1000px;
+        height: 600px;    
+        left: 50%;
+        top: 50%;
+        margin-left: -500px;
+        margin-top: -300px;
+    
+    }
+    .close-modal {
+        font-size: 2.5rem;
+        position: absolute;
+        right: 3%;
+        top: 5%;
+        background: #E92F2F;
+    color: white;
+    padding: 0 10px;
+    }
+    .modal-title{
+        border-left: 2px solid #666;
+        padding-left: 20px;
+        margin: 50px 0 0 50px;
+    }
+    .modal-title h3{
+        font-size: 40px;
+    }
+    .modal-title h3{
+        font-size: 30;
+        color: #666
+    }
+
+
+    ul{
+
         list-style-type: none ;
     }
     .side-banner{
